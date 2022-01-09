@@ -45,4 +45,41 @@
          }
          return sentinel.next;
      }
+
+     // 61. Rotate List
+     public static ListNode rotateRight(ListNode head, int k) {
+         if (head == null ) return head; //return null
+         // find the size of the link
+         int n = 0;
+         ListNode curr = head;
+         while (curr != null) {
+             n++;
+             curr = curr.next;
+         }
+         // find the true rotate location
+         int l = k % n;
+         return trueRotate(head,l);
+     }
+     /// true rotation  val l < link.size
+     public static ListNode trueRotate(ListNode head, int l) {
+         // two pointer
+         ListNode fast = head;
+         for (int i = 0; i < l; i++) {
+             fast = fast.next;
+         }
+         ListNode slow = head;
+
+         while (fast.next != null) {
+             slow= slow.next;
+             fast = fast.next;
+         }
+
+         // rotate
+         fast.next = head;
+         head = slow.next;
+         // new tail
+         slow.next = null;
+         return head;
+     }
+
 }
