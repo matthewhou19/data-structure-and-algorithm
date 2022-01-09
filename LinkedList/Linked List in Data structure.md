@@ -48,7 +48,7 @@ In most cases, we will use the `head` node (the first node) to represent the
 
 ### implementation
 
-[Implementation of single list](LinkedList/src/MyLinkedList.java)
+[Implementation of single list](https://github.com/matthewhou19/data-structure-and-algorithm/blob/main/LinkedList/src/MyLinkedList.java)
 
 ## doubly Linked list
 
