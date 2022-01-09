@@ -6,7 +6,7 @@ public class test {
         //testMiddlePoint();
 
         // single list reverse
-        //testReverse();
+        testReverse();
     }
 
     // test find middle point
@@ -21,7 +21,7 @@ public class test {
 
     public static void testReverse() {
         // change the val of createList METHOD to check different length of List
-        singleList.ListNode singList = singleList.createList(0);
+        singleList.ListNode singList = singleList.createList(10);
         singleList.ListNode reverse = singleList.reverse(singList);
         while (reverse != null) {
             System.out.print(reverse.val);
