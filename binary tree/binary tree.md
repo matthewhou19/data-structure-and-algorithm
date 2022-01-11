@@ -3,3 +3,15 @@
 A `Binary Tree` is one of the most typical tree structure. As the name suggests, a binary tree is a tree data structure in which each node has `at most two children`, which are referred to as the left child and the right child.
 
 ## Traversal
+
+### fundamental Traversal
+
+* Preorder
+* Inorder
+* Postorder
+
+### Special Traversal
+
+1. level order Traversal
+
+> 在递归method中加入一个标志层数的parameter 。 example:leetcode 102
