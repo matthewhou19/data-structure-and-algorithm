@@ -34,7 +34,6 @@ There are some other solutions for iterative traversal which can reduce the spac
 
 example:find depth of binary tree
 
-
 ### "Bottom-up" Solution of recursive
 
 ```
@@ -46,7 +45,6 @@ example:find depth of binary tree
 
 example:find depth of binary tree
 
-
 If we know the maximum depth `l` of the subtree rooted at its **left** child and the maximum depth `r` of the subtree rooted at its **right** child, can we answer the previous question? Of course yes, we can choose the maximum between them and add 1 to get the maximum depth of the subtree rooted at the current node. That is `x = max(l, r) + 1`.
 
 It means that for each node, we can get the answer after solving the problem for its children. Therefore, we can solve this problem using a "bottom-up" solution. Here is the pseudocode for the recursive function `maximum_depth(root)`:
@@ -57,6 +55,9 @@ It means that for each node, we can get the answer after solving the problem for
 3. right_depth = maximum_depth(root.right)
 4. return max(left_depth, right_depth) + 1  // return depth of the subtree rooted at root
 ```
+
+
+### Build binary search tree from array or  Serialize
 
 
 ### Conclusion
