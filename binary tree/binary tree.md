@@ -56,9 +56,7 @@ It means that for each node, we can get the answer after solving the problem for
 4. return max(left_depth, right_depth) + 1  // return depth of the subtree rooted at root
 ```
 
-
 ### Build binary search tree from array or  Serialize
-
 
 ### Conclusion
 
