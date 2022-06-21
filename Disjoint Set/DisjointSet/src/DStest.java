@@ -26,6 +26,17 @@ public class DStest {
         assertEquals(false, ds.isConnected(3,9));
     }
 
+    @Test
+    public void WeightedQuickUnionTest(){
+        DisjointSets ds = new WeigtedQuickUnionDS(10);
+        tenElements(ds);
+        assertEquals(true, ds.isConnected(7,9));
+        assertEquals(true, ds.isConnected(1,2));
+        assertEquals(true, ds.isConnected(4,5));
+        assertEquals(false, ds.isConnected(0,9));
+        assertEquals(false, ds.isConnected(3,9));
+    }
+
 
 
 
