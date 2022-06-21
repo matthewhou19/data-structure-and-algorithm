@@ -15,6 +15,18 @@ public class DStest {
         assertEquals(false, ds.isConnected(0,9));
         assertEquals(false, ds.isConnected(3,9));
     }
+    @Test
+        public void QuickUnionTest(){
+        DisjointSets ds = new QuickUnionDS(10);
+        tenElements(ds);
+        assertEquals(true, ds.isConnected(7,9));
+        assertEquals(true, ds.isConnected(1,2));
+        assertEquals(true, ds.isConnected(4,5));
+        assertEquals(false, ds.isConnected(0,9));
+        assertEquals(false, ds.isConnected(3,9));
+    }
+
+
 
 
     private void tenElements(DisjointSets ds) {
