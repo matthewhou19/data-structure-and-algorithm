@@ -3,5 +3,5 @@ public interface BinarySearchTree {
 
     boolean find(int k) ;
 
-    boolean delete(int k);
+    void delete(int k);
 }
