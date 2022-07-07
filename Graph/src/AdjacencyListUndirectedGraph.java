@@ -5,20 +5,24 @@ public class AdjacencyListUndirectedGraph<K> implements Graph<K>{
     Set<K> set;
 
     List<List<Integer>> buckets;
+    List<K> indexes;
 
 
     public AdjacencyListUndirectedGraph () {
         map = new HashMap<>();
         set = new HashSet<>();
         buckets = new ArrayList<>();
+        indexes = new ArrayList<>();
     }
 
     public void addvertex(K v) {
         if (!set.contains(v)) {
             //  buckets have the same index as the size of the set
-            map.put(v, set.size());
+            int index = set.size();
+            map.put(v, index);
             set.add(v);
             buckets.add(new ArrayList<Integer>());
+            indexes.add(v);
         }
     }
 
@@ -47,11 +51,15 @@ public class AdjacencyListUndirectedGraph<K> implements Graph<K>{
     }
 
     @Override
-    public Iterable<Integer> adj(K v) {
+    public Iterable<K> adj(K v) {
         if (!set.contains(v)) {
             return  null;
         }
-        return buckets.get(map.get(v));
+        List<K> res = new ArrayList<>();
+        for (Integer  index : buckets.get(map.get(v))) {
+            res.add(indexes.get(index));
+        }
+        return res ;
     }
 
     @Override
