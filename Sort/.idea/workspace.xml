@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7aef0b-9b43-416a-9069-a49465bacfe7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sort/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sort/SelectionSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Matthew/Documents/GitHub/CS61B-18sp/lab12&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestSort.bubbleSortTest">
     <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SelectionSort" />
       <module name="Sort" />
@@ -45,8 +48,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BubbleSort.selectionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sort" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BubbleSort" />
+      <option name="METHOD_NAME" value="selectionSortTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSort.bubbleSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sort" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSort" />
+      <option name="METHOD_NAME" value="bubbleSortTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSort.bubbleSortTest" />
+        <item itemvalue="JUnit.BubbleSort.selectionSortTest" />
         <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
@@ -60,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660073639907</updated>
       <workItem from="1660073641089" duration="113000" />
-      <workItem from="1660073795774" duration="3286000" />
+      <workItem from="1660073795774" duration="6158000" />
     </task>
     <servers />
   </component>
