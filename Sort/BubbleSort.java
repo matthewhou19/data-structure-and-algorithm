@@ -3,6 +3,7 @@
 
 public class BubbleSort {
    public static <Item extends Comparable> void sort(Item[] items) {
+       if (items == null || items.length <= 1) return;
        boolean hasSwap = true;
        while (hasSwap) {
            hasSwap = false;

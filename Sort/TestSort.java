@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class TestSort {
     @Test
@@ -21,6 +22,26 @@ public class TestSort {
         Arrays.sort(words);
         assertArrayEquals(ourWords, words);
     }
+
+    @Test
+    public void insertionSortTest() {
+        String[] words = generateStringArray();
+        InsertionSort.sort(words);
+        String[] ourWords = Arrays.copyOf(words, words.length);
+        Arrays.sort(words);
+        assertArrayEquals(ourWords, words);
+    }
+
+    @Test
+    public void HeapSortTest() {
+        String[] words = generateStringArray();
+        HeapSort.sort(words);
+        String[] ourWords = Arrays.copyOf(words, words.length);
+        Arrays.sort(words);
+        assertArrayEquals(ourWords, words);
+    }
+
+
 
 
     private String[] generateStringArray(){
