@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7aef0b-9b43-416a-9069-a49465bacfe7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CountingSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/147. Insertion Sort List.md" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/147. Insertion Sort List.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/215. Kth Largest Element in an Array.md" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/215. Kth Largest Element in an Array.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode/75. Sort Colors.md" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode/75. Sort Colors.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sort/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Sort/TestSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sort/TestSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +37,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matthew/Documents/GitHub/CS61B-18sp/lab12&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Matthew/Documents/GitHub/data-structure-and-algorithm/Trie"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TestSort.HeapSortTest">
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestSort.CountingSortTest">
     <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HeapSort" />
       <module name="Sort" />
@@ -51,11 +53,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort.selectionSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSort.CountingSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sort" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BubbleSort" />
-      <option name="METHOD_NAME" value="selectionSortTest" />
+      <option name="MAIN_CLASS_NAME" value="TestSort" />
+      <option name="METHOD_NAME" value="CountingSortTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSort.CountingSortTest" />
         <item itemvalue="JUnit.TestSort.HeapSortTest" />
         <item itemvalue="Application.HeapSort" />
         <item itemvalue="JUnit.TestSort.insertionSortTest" />
         <item itemvalue="JUnit.TestSort.bubbleSortTest" />
-        <item itemvalue="JUnit.BubbleSort.selectionSortTest" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1660073639907</updated>
       <workItem from="1660073641089" duration="113000" />
-      <workItem from="1660073795774" duration="10644000" />
+      <workItem from="1660073795774" duration="12645000" />
+      <workItem from="1660158677471" duration="4497000" />
     </task>
     <servers />
   </component>
@@ -138,8 +141,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/HeapSort.java</url>
-          <line>46</line>
+          <line>48</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CountingSort.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

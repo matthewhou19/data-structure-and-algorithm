@@ -41,10 +41,24 @@ public class TestSort {
         assertArrayEquals(ourWords, words);
     }
 
+    @Test
+    public void CountingSortTest() {
+        int[] nums = generateIntArray();
+        CountingSort.sort(nums);
+        int[] ourNums = Arrays.copyOf(nums, nums.length);
+        Arrays.sort(nums);
+        assertArrayEquals(ourNums, nums);
+    }
+
+
 
 
 
     private String[] generateStringArray(){
         return new String[]{"xxbc", "ffg", "mmc", "bbc", "aab", "ddc", "ppo", "llg", "eec", "ccac", "iic"};
+    }
+
+    private static int[] generateIntArray(){
+        return new int[]{1, 2 , 3 , 4 , 5 , 6, 7, 8, 9, 1, 2, 3, 5, 6, 8, 9, 10, 10, 9, 8};
     }
 }
