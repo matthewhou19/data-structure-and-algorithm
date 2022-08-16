@@ -11,4 +11,18 @@ public interface Trie {
     public String longestPrefixOf(String  word);
 
     public List<String> keysWithPrefix(String prefix);
+
+    // check if string has char not in alphabet
+    default boolean validation(String str) {
+        str = str.toLowerCase();
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c - 'a' < 0 || c - 'z' > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
+
+
